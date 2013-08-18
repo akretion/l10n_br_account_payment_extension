@@ -17,14 +17,14 @@
 #along with this program.  If not, see <http://www.gnu.org/licenses/>.        #
 ###############################################################################
 
-from osv import fields, osv
+from osv import orm, fields
 
 
-class account_move_line(osv.Model):
+class account_move_line(orm.Model):
     _inherit = 'account.move.line'
     _columns = {
         'revenue_expense': fields.related(
             'journal_id', 'revenue_expense', type='boolean',
-            string='Revenue Expense',
-            store=True, readonly=True),
+            relation='account.journal', string='Revenue Expense',
+            store=False, readonly=True),
     }

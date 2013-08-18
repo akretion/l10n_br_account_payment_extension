@@ -18,6 +18,6 @@
 ###############################################################################
 
 import account_move_line
+import account_payment
 import account_invoice
 import wizard
-

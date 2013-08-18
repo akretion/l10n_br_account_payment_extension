@@ -18,7 +18,7 @@
 ###############################################################################
 
 {
-    'name': 'Account Payment Extension',
+    'name': 'Brazilian Account Payment Extension',
     'description': 'Brazilian Localization Account Payment Extension',
     'category': 'Localisation',
     'license': 'AGPL-3',
@@ -31,10 +31,9 @@
         'account_payment_extension',
     ],
     'data': [
-        'payment_view.xml',
         'l10n_br_account_payment_extension_data.xml',
+        'account_payment_view.xml',
         'account_invoice_view.xml',
-        'security/ir.model.access.csv',
         'security/l10n_br_account_payment_extension_security.xml',
     ],
     'demo': [
